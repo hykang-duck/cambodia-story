@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="climate-phnompenh" viewBox="0 0 720 520" width="720" height="520" role="img" aria-labelledby="t d">
+<title id="t">프놈펜의 열두 달</title>
+<desc id="d">프놈펜의 월별 강수량(막대)과 평균 최고·최저기온(선). 비는 5월 무렵부터 10월 무렵까지 많이 오고 9~10월에 가장 많으며, 가장 더운 달은 4월이다.</desc>
+<style>
+  #climate-phnompenh .bg { fill: #FFFFFF; }
+  #climate-phnompenh .rainzone { fill: #E1ECEE; opacity: 0.6; }
+  #climate-phnompenh .rainzone2 { fill: #E1ECEE; opacity: 0.25; }
+  #climate-phnompenh .grid { stroke: #D9CDBB; stroke-width: 1; }
+  #climate-phnompenh .axis { stroke: #5A4D43; stroke-width: 2; }
+  #climate-phnompenh .bar { fill: #9DBDC4; stroke: #3E6A73; stroke-width: 2; }
+  #climate-phnompenh .hi { fill: none; stroke: #B45309; stroke-width: 3.5; stroke-linejoin: round; }
+  #climate-phnompenh .lo { fill: none; stroke: #7A5B3C; stroke-width: 3.5; stroke-dasharray: 9 6; stroke-linejoin: round; }
+  #climate-phnompenh .mhi { fill: #B45309; stroke: #fff; stroke-width: 2; }
+  #climate-phnompenh .mlo { fill: #fff; stroke: #7A5B3C; stroke-width: 3; }
+  #climate-phnompenh .t { font-family: "Noto Sans KR", "Malgun Gothic", sans-serif; fill: #2A211B; font-size: 17px; font-weight: 500; }
+  #climate-phnompenh .title { font-size: 26px; font-weight: 700; }
+  #climate-phnompenh .ax-p { fill: #3E6A73; font-weight: 700; }
+  #climate-phnompenh .ax-t { fill: #7C3A06; font-weight: 700; }
+  #climate-phnompenh .mon { font-size: 18px; font-weight: 700; }
+  #climate-phnompenh .halo { paint-order: stroke; stroke: #fff; stroke-width: 5px; stroke-linejoin: round; }
+  #climate-phnompenh .lab-hi { fill: #7C3A06; font-weight: 700; }
+  #climate-phnompenh .lab-lo { fill: #5A4D43; font-weight: 700; }
+  #climate-phnompenh .lab-rain { fill: #2F535B; font-weight: 700; }
+  #climate-phnompenh .band-rain { fill: #3E6A73; }
+  #climate-phnompenh .band-dry { fill: #7A5B3C; }
+  #climate-phnompenh .band-mix { fill: url(#cph-hatch); stroke: #5A4D43; stroke-width: 1; }
+  #climate-phnompenh .band-t { fill: #fff; font-size: 17px; font-weight: 700; }
+  #climate-phnompenh .small { fill: #5A4D43; font-size: 16px; font-weight: 500; }
+</style>
+<defs><pattern id="cph-hatch" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="10" height="10" fill="#E1ECEE"/><rect width="5" height="10" fill="#7A5B3C"/></pattern></defs>
+<rect class="bg" width="720" height="520"/>
+<text class="t title" x="20" y="32">프놈펜의 열두 달</text>
+<text class="t ax-p" x="56" y="68" text-anchor="middle">강수량(㎜)</text>
+<text class="t ax-t" x="664" y="68" text-anchor="middle">기온(℃)</text>
+<rect class="rainzone2" x="257.3" y="80" width="51.3" height="310"/>
+<rect class="rainzone" x="308.7" y="80" width="256.7" height="310"/>
+<rect class="rainzone2" x="565.3" y="80" width="51.3" height="310"/>
+<line class="grid" x1="52" y1="390.0" x2="668" y2="390.0"/>
+<text class="t ax-p" x="46" y="396.0" text-anchor="end">0</text>
+<text class="t ax-t" x="674" y="396.0" text-anchor="start">0</text>
+<line class="grid" x1="52" y1="351.2" x2="668" y2="351.2"/>
+<text class="t ax-p" x="46" y="357.2" text-anchor="end">50</text>
+<text class="t ax-t" x="674" y="357.2" text-anchor="start">5</text>
+<line class="grid" x1="52" y1="312.5" x2="668" y2="312.5"/>
+<text class="t ax-p" x="46" y="318.5" text-anchor="end">100</text>
+<text class="t ax-t" x="674" y="318.5" text-anchor="start">10</text>
+<line class="grid" x1="52" y1="273.8" x2="668" y2="273.8"/>
+<text class="t ax-p" x="46" y="279.8" text-anchor="end">150</text>
+<text class="t ax-t" x="674" y="279.8" text-anchor="start">15</text>
+<line class="grid" x1="52" y1="235.0" x2="668" y2="235.0"/>
+<text class="t ax-p" x="46" y="241.0" text-anchor="end">200</text>
+<text class="t ax-t" x="674" y="241.0" text-anchor="start">20</text>
+<line class="grid" x1="52" y1="196.2" x2="668" y2="196.2"/>
+<text class="t ax-p" x="46" y="202.2" text-anchor="end">250</text>
+<text class="t ax-t" x="674" y="202.2" text-anchor="start">25</text>
+<line class="grid" x1="52" y1="157.5" x2="668" y2="157.5"/>
+<text class="t ax-p" x="46" y="163.5" text-anchor="end">300</text>
+<text class="t ax-t" x="674" y="163.5" text-anchor="start">30</text>
+<line class="grid" x1="52" y1="118.8" x2="668" y2="118.8"/>
+<text class="t ax-p" x="46" y="124.8" text-anchor="end">350</text>
+<text class="t ax-t" x="674" y="124.8" text-anchor="start">35</text>
+<line class="grid" x1="52" y1="80.0" x2="668" y2="80.0"/>
+<text class="t ax-p" x="46" y="86.0" text-anchor="end">400</text>
+<text class="t ax-t" x="674" y="86.0" text-anchor="start">40</text>
+<rect class="bar" data-month="1" data-pr="12.1" x="61.8" y="380.6" width="31.8" height="9.4"/>
+<rect class="bar" data-month="2" data-pr="6.6" x="113.1" y="384.9" width="31.8" height="5.1"/>
+<rect class="bar" data-month="3" data-pr="34.8" x="164.4" y="363.0" width="31.8" height="27.0"/>
+<rect class="bar" data-month="4" data-pr="78.8" x="215.8" y="328.9" width="31.8" height="61.1"/>
+<rect class="bar" data-month="5" data-pr="118.2" x="267.1" y="298.4" width="31.8" height="91.6"/>
+<rect class="bar" data-month="6" data-pr="145.0" x="318.4" y="277.6" width="31.8" height="112.4"/>
+<rect class="bar" data-month="7" data-pr="162.1" x="369.8" y="264.4" width="31.8" height="125.6"/>
+<rect class="bar" data-month="8" data-pr="182.7" x="421.1" y="248.4" width="31.8" height="141.6"/>
+<rect class="bar" data-month="9" data-pr="270.9" x="472.4" y="180.1" width="31.8" height="209.9"/>
+<rect class="bar" data-month="10" data-pr="248.1" x="523.8" y="197.7" width="31.8" height="192.3"/>
+<rect class="bar" data-month="11" data-pr="120.5" x="575.1" y="296.6" width="31.8" height="93.4"/>
+<rect class="bar" data-month="12" data-pr="32.1" x="626.4" y="365.1" width="31.8" height="24.9"/>
+<line class="axis" x1="52" y1="390" x2="668" y2="390"/>
+<line class="axis" x1="52" y1="80" x2="52" y2="390"/>
+<line class="axis" x1="668" y1="80" x2="668" y2="390"/>
+<polyline class="hi" points="77.7,145.1 129.0,132.7 180.3,121.9 231.7,116.4 283.0,120.3 334.3,128.1 385.7,135.0 437.0,136.6 488.3,140.4 539.7,146.7 591.0,149.0 642.3,151.3"/>
+<polyline class="lo" points="77.7,221.0 129.0,213.3 180.3,201.7 231.7,192.4 283.0,191.6 334.3,197.0 385.7,197.8 437.0,199.3 488.3,200.9 539.7,202.5 591.0,210.2 642.3,220.3"/>
+<circle class="mhi" data-month="1" data-hi="31.6" cx="77.7" cy="145.1" r="6"/>
+<rect class="mlo" data-month="1" data-lo="21.8" x="72.2" y="215.5" width="11.0" height="11.0"/>
+<circle class="mhi" data-month="2" data-hi="33.2" cx="129.0" cy="132.7" r="6"/>
+<rect class="mlo" data-month="2" data-lo="22.8" x="123.5" y="207.8" width="11.0" height="11.0"/>
+<circle class="mhi" data-month="3" data-hi="34.6" cx="180.3" cy="121.9" r="6"/>
+<rect class="mlo" data-month="3" data-lo="24.3" x="174.8" y="196.2" width="11.0" height="11.0"/>
+<circle class="mhi" data-month="4" data-hi="35.3" cx="231.7" cy="116.4" r="6"/>
+<rect class="mlo" data-month="4" data-lo="25.5" x="226.2" y="186.9" width="11.0" height="11.0"/>
+<circle class="mhi" data-month="5" data-hi="34.8" cx="283.0" cy="120.3" r="6"/>
+<rect class="mlo" data-month="5" data-lo="25.6" x="277.5" y="186.1" width="11.0" height="11.0"/>
+<circle class="mhi" data-month="6" data-hi="33.8" cx="334.3" cy="128.1" r="6"/>
+<rect class="mlo" data-month="6" data-lo="24.9" x="328.8" y="191.5" width="11.0" height="11.0"/>
+<circle class="mhi" data-month="7" data-hi="32.9" cx="385.7" cy="135.0" r="6"/>
+<rect class="mlo" data-month="7" data-lo="24.8" x="380.2" y="192.3" width="11.0" height="11.0"/>
+<circle class="mhi" data-month="8" data-hi="32.7" cx="437.0" cy="136.6" r="6"/>
+<rect class="mlo" data-month="8" data-lo="24.6" x="431.5" y="193.8" width="11.0" height="11.0"/>
+<circle class="mhi" data-month="9" data-hi="32.2" cx="488.3" cy="140.4" r="6"/>
+<rect class="mlo" data-month="9" data-lo="24.4" x="482.8" y="195.4" width="11.0" height="11.0"/>
+<circle class="mhi" data-month="10" data-hi="31.4" cx="539.7" cy="146.7" r="6"/>
+<rect class="mlo" data-month="10" data-lo="24.2" x="534.2" y="197.0" width="11.0" height="11.0"/>
+<circle class="mhi" data-month="11" data-hi="31.1" cx="591.0" cy="149.0" r="6"/>
+<rect class="mlo" data-month="11" data-lo="23.2" x="585.5" y="204.7" width="11.0" height="11.0"/>
+<circle class="mhi" data-month="12" data-hi="30.8" cx="642.3" cy="151.3" r="6"/>
+<rect class="mlo" data-month="12" data-lo="21.9" x="636.8" y="214.8" width="11.0" height="11.0"/>
+<text class="t lab-hi halo" x="227.7" y="102.4" text-anchor="middle">가장 더운 달 4월 35.3℃</text>
+<text class="t lab-rain halo" x="488.3" y="172.1" text-anchor="middle" style="font-size:16px">270.9</text>
+<text class="t lab-rain halo" x="539.7" y="189.7" text-anchor="middle" style="font-size:16px">248.1</text>
+<text class="t lab-rain halo" x="538.0" y="100.0" text-anchor="middle">비가 가장 많은 달: 9~10월</text>
+<line class="hi" x1="62.0" y1="181.1" x2="94.0" y2="181.1"/>
+<circle class="mhi" cx="78.0" cy="181.1" r="6"/>
+<text class="t lab-hi halo" x="102.0" y="187.1">평균 최고기온 (실선 ●)</text>
+<line class="lo" x1="62.0" y1="255.0" x2="94.0" y2="255.0"/>
+<rect class="mlo" x="72.5" y="249.5" width="11" height="11"/>
+<text class="t lab-lo halo" x="102.0" y="261.0">평균 최저기온 (점선 ■)</text>
+<text class="t lab-rain halo" x="265.3" y="231.1">막대: 월 강수량</text>
+<text class="t mon" x="77.7" y="416" text-anchor="middle">1월</text>
+<text class="t mon" x="129.0" y="416" text-anchor="middle">2월</text>
+<text class="t mon" x="180.3" y="416" text-anchor="middle">3월</text>
+<text class="t mon" x="231.7" y="416" text-anchor="middle">4월</text>
+<text class="t mon" x="283.0" y="416" text-anchor="middle">5월</text>
+<text class="t mon" x="334.3" y="416" text-anchor="middle">6월</text>
+<text class="t mon" x="385.7" y="416" text-anchor="middle">7월</text>
+<text class="t mon" x="437.0" y="416" text-anchor="middle">8월</text>
+<text class="t mon" x="488.3" y="416" text-anchor="middle">9월</text>
+<text class="t mon" x="539.7" y="416" text-anchor="middle">10월</text>
+<text class="t mon" x="591.0" y="416" text-anchor="middle">11월</text>
+<text class="t mon" x="642.3" y="416" text-anchor="middle">12월</text>
+<rect class="band-dry" x="52" y="428" width="203.3" height="34"/>
+<rect class="band-mix" x="257.3" y="428" width="49.3" height="34"/>
+<rect class="band-rain" x="308.7" y="428" width="254.7" height="34"/>
+<rect class="band-mix" x="565.3" y="428" width="49.3" height="34"/>
+<rect class="band-dry" x="616.7" y="428" width="51.3" height="34"/>
+<text class="t band-t" x="153.7" y="451" text-anchor="middle">건기 무렵 (11~4월 무렵)</text>
+<text class="t band-t" x="436.0" y="451" text-anchor="middle">우기 무렵 (5~10월 무렵)</text>
+<text class="t small" x="20" y="490">빗금: 5월·11월은 비가 비슷한 전환기 · 자료: 평년값(출처는 캡션)</text>
+</svg>

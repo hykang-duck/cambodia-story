@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="kroeung" viewBox="0 0 920 760" width="920" height="760" role="img" aria-labelledby="t d">
+<title id="t">노랑 끄르엉의 기본 재료</title><desc id="d">노랑 끄르엉에 들어가는 대표 재료 도식. 레몬그라스, 갈랑갈, 강황, 마늘, 샬롯이 한 줄로 놓이고, 아래의 한 칸으로 모여 빻아서 반죽이 된다. 강황은 노란 빛을 내는 주된 재료다.</desc>
+<style>
+  #kroeung .bg        { fill: #FBF6EC; }
+  #kroeung .c-green   { fill: #E3EFE7; stroke: #2F6B4A; stroke-width: 3; }
+  #kroeung .c-sand    { fill: #F4ECDD; stroke: #7A5B3C; stroke-width: 3; }
+  #kroeung .c-saffron { fill: #F6E1C3; stroke: #B45309; stroke-width: 3; }
+  #kroeung .c-water   { fill: #E1ECEE; stroke: #3E6A73; stroke-width: 3; }
+  #kroeung .c-paper   { fill: #FFFFFF; stroke: #5A4D43; stroke-width: 3; stroke-linejoin: round; }
+  #kroeung .g-leaf    { fill: none; stroke: #2F6B4A; stroke-width: 6; stroke-linecap: round; }
+  #kroeung .g-root    { fill: #EBDDBF; stroke: #7A5B3C; stroke-width: 3; }
+  #kroeung .g-turm    { fill: #E0953A; stroke: #B45309; stroke-width: 3; }
+  #kroeung .g-line    { fill: none; stroke: #5A4D43; stroke-width: 2; stroke-linecap: round; }
+  #kroeung .g-line-w  { fill: none; stroke: #3E6A73; stroke-width: 2; stroke-linecap: round; }
+  #kroeung .bowl      { fill: #F6E1C3; stroke: #B45309; stroke-width: 4; stroke-linejoin: round; }
+  #kroeung .arrow     { stroke: #7A5B3C; stroke-width: 4; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+  #kroeung .arrow-head{ fill: #7A5B3C; }
+  #kroeung .t-title   { fill: #2A211B; font: 700 40px "Noto Sans KR", "Malgun Gothic", sans-serif; }
+  #kroeung .t-sub     { fill: #5A4D43; font: 500 26px "Noto Sans KR", "Malgun Gothic", sans-serif; }
+  #kroeung .t-name    { fill: #2A211B; font: 700 32px "Noto Sans KR", "Malgun Gothic", sans-serif; }
+  #kroeung .t-desc    { fill: #2A211B; font: 500 26px "Noto Sans KR", "Malgun Gothic", sans-serif; }
+  #kroeung .t-bowl    { fill: #2A211B; font: 700 38px "Noto Sans KR", "Malgun Gothic", sans-serif; }
+  #kroeung .t-bowl-sm { fill: #5A4D43; font: 500 28px "Noto Sans KR", "Malgun Gothic", sans-serif; }
+  #kroeung .t-note    { fill: #5A4D43; font: 500 24px "Noto Sans KR", "Malgun Gothic", sans-serif; }
+</style>
+<rect class="bg" x="0" y="0" width="920" height="760"/>
+<text class="t-title" x="50" y="72">노랑 끄르엉의 기본 재료</text>
+<text class="t-sub" x="50" y="114">아목의 양념 반죽에 들어가는 대표 재료예요</text>
+
+<!-- 1 레몬그라스 -->
+<circle class="c-green" cx="92" cy="240" r="52"/>
+<path class="g-leaf" d="M78,268 L84,214 M92,270 L92,208 M106,268 L100,214"/>
+<text class="t-name" x="92" y="350" text-anchor="middle">레몬그라스</text>
+<!-- 2 갈랑갈 -->
+<circle class="c-sand" cx="276" cy="240" r="52"/>
+<ellipse class="g-root" cx="262" cy="248" rx="21" ry="13"/>
+<ellipse class="g-root" cx="292" cy="234" rx="19" ry="12"/>
+<ellipse class="g-root" cx="274" cy="226" rx="13" ry="9"/>
+<text class="t-name" x="276" y="350" text-anchor="middle">갈랑갈</text>
+<!-- 3 강황 -->
+<circle class="c-saffron" cx="460" cy="240" r="52"/>
+<ellipse class="g-turm" cx="446" cy="248" rx="21" ry="13"/>
+<ellipse class="g-turm" cx="476" cy="234" rx="19" ry="12"/>
+<ellipse class="g-turm" cx="458" cy="226" rx="13" ry="9"/>
+<text class="t-name" x="460" y="350" text-anchor="middle">강황</text>
+<text class="t-desc" x="460" y="388" text-anchor="middle">노란 빛을 내는</text>
+<text class="t-desc" x="460" y="420" text-anchor="middle">주된 재료</text>
+<!-- 4 마늘 -->
+<circle class="c-water" cx="644" cy="240" r="52"/>
+<path class="c-paper" d="M644,206 C640,218 620,230 620,250 C620,270 668,270 668,250 C668,230 648,218 644,206 Z"/>
+<path class="g-line" d="M644,222 L644,264 M634,236 C630,248 632,258 636,264 M654,236 C658,248 656,258 652,264"/>
+<text class="t-name" x="644" y="350" text-anchor="middle">마늘</text>
+<!-- 5 샬롯 -->
+<circle class="c-sand" cx="828" cy="240" r="52"/>
+<path class="c-paper" d="M828,208 C826,216 812,226 812,246 C812,266 844,266 844,246 C844,226 830,216 828,208 Z"/>
+<path class="g-line" d="M828,220 C822,236 822,252 828,262 M828,220 C834,236 834,252 828,262"/>
+<text class="t-name" x="828" y="350" text-anchor="middle">샬롯</text>
+
+<!-- 모이는 선 -->
+<path class="arrow" d="M92,372 V480 M276,372 V480 M644,372 V480 M828,372 V480 M92,480 H828 M460,432 V480 M460,480 V532"/>
+<path class="arrow-head" d="M444,522 L476,522 L460,550 Z"/>
+
+<!-- 반죽 -->
+<rect class="bowl" x="200" y="560" width="520" height="104" rx="24"/>
+<text class="t-bowl" x="460" y="608" text-anchor="middle">빻아서 반죽으로</text>
+<text class="t-bowl-sm" x="460" y="644" text-anchor="middle">= 노랑 끄르엉</text>
+
+<text class="t-note" x="50" y="714">대표 재료만 그렸어요. 요리와 집마다 들어가는 재료가 달라요.</text>
+<text class="t-note" x="50" y="744">그림은 단순화한 도식 · 직접 제작(제작팀)</text>
+</svg>

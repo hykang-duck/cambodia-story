@@ -1,0 +1,278 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="consonants" viewBox="0 0 920 1339" width="920" height="1339" role="img" aria-labelledby="t d">
+<title id="t">크메르 문자 자음 33자 표</title>
+<desc id="d">크메르 문자 자음 33자를 가로 5칸씩 늘어놓은 표. 칸마다 크메르 문자, 간이 로마자, 한글 근사 소리가 들어 있다. 자음은 a 계열(주황 테두리, 동그라미 표식)과 o 계열(청록 테두리, 네모 표식 및 점선 테두리)로 나뉜다.</desc>
+<style>
+  #consonants .bg { fill: #FBF6EC; }
+  #consonants .cellA { fill: #FBE9D5; stroke: #B45309; stroke-width: 3; }
+  #consonants .cellO { fill: #E1ECEE; stroke: #3E6A73; stroke-width: 3; stroke-dasharray: 9 5; }
+  #consonants .mkA { fill: #B45309; }
+  #consonants .mkO { fill: #3E6A73; }
+  #consonants .mkT { fill: #fff; font: 700 17px "Noto Sans KR", "Malgun Gothic", sans-serif; text-anchor: middle; }
+  #consonants .km { fill: #2A211B; font: 400 52px "Leelawadee UI", "Khmer UI", sans-serif; text-anchor: middle; }
+  #consonants .rom { fill: #2A211B; font: 700 28px "Noto Sans KR", "Malgun Gothic", sans-serif; text-anchor: end; }
+  #consonants .han { fill: #5A4D43; font: 500 28px "Noto Sans KR", "Malgun Gothic", sans-serif; text-anchor: start; }
+  #consonants .title { fill: #2A211B; font: 700 36px "Noto Sans KR", "Malgun Gothic", sans-serif; }
+  #consonants .sub { fill: #5A4D43; font: 500 24px "Noto Sans KR", "Malgun Gothic", sans-serif; }
+  #consonants .leg { fill: #2A211B; font: 700 24px "Noto Sans KR", "Malgun Gothic", sans-serif; }
+  #consonants .leg2 { fill: #5A4D43; font: 500 21px "Noto Sans KR", "Malgun Gothic", sans-serif; }
+  #consonants .note { fill: #5A4D43; font: 500 22px "Noto Sans KR", "Malgun Gothic", sans-serif; }
+  #consonants .kmf { font-family: "Leelawadee UI", "Khmer UI", sans-serif; }
+</style>
+<rect class="bg" width="920" height="1339"/>
+<text class="title" x="40" y="56">크메르 문자 자음 33자</text>
+<text class="sub" x="40" y="92">위키백과 표의 순서 · 5자씩 묶음 · 칸마다 글자 / 로마자 · 한글 근사 소리</text>
+<g id="c1" data-cp="U+1780" data-series="a">
+<rect class="cellA" x="40.0" y="128" width="161.6" height="124" rx="10"/>
+<circle class="mkA" cx="60.0" cy="148" r="13"/><text class="mkT" x="60.0" y="154">a</text>
+<text class="km" lang="km" x="120.8" y="196">ក</text>
+<text class="rom" x="116.8" y="240">k</text>
+<text class="han" x="128.8" y="240">까</text>
+</g>
+<g id="c2" data-cp="U+1781" data-series="a">
+<rect class="cellA" x="209.6" y="128" width="161.6" height="124" rx="10"/>
+<circle class="mkA" cx="229.6" cy="148" r="13"/><text class="mkT" x="229.6" y="154">a</text>
+<text class="km" lang="km" x="290.4" y="196">ខ</text>
+<text class="rom" x="286.4" y="240">kh</text>
+<text class="han" x="298.4" y="240">카</text>
+</g>
+<g id="c3" data-cp="U+1782" data-series="o">
+<rect class="cellO" x="379.2" y="128" width="161.6" height="124" rx="10"/>
+<rect class="mkO" x="386.2" y="135" width="26" height="26" rx="3"/><text class="mkT" x="399.2" y="154">o</text>
+<text class="km" lang="km" x="460.0" y="196">គ</text>
+<text class="rom" x="456.0" y="240">k</text>
+<text class="han" x="468.0" y="240">꼬</text>
+</g>
+<g id="c4" data-cp="U+1783" data-series="o">
+<rect class="cellO" x="548.8" y="128" width="161.6" height="124" rx="10"/>
+<rect class="mkO" x="555.8" y="135" width="26" height="26" rx="3"/><text class="mkT" x="568.8" y="154">o</text>
+<text class="km" lang="km" x="629.6" y="196">ឃ</text>
+<text class="rom" x="625.6" y="240">kh</text>
+<text class="han" x="637.6" y="240">코</text>
+</g>
+<g id="c5" data-cp="U+1784" data-series="o">
+<rect class="cellO" x="718.4" y="128" width="161.6" height="124" rx="10"/>
+<rect class="mkO" x="725.4" y="135" width="26" height="26" rx="3"/><text class="mkT" x="738.4" y="154">o</text>
+<text class="km" lang="km" x="799.2" y="196">ង</text>
+<text class="rom" x="795.2" y="240">ng</text>
+<text class="han" x="807.2" y="240">응오</text>
+</g>
+<g id="c6" data-cp="U+1785" data-series="a">
+<rect class="cellA" x="40.0" y="260" width="161.6" height="124" rx="10"/>
+<circle class="mkA" cx="60.0" cy="280" r="13"/><text class="mkT" x="60.0" y="286">a</text>
+<text class="km" lang="km" x="120.8" y="328">ច</text>
+<text class="rom" x="116.8" y="372">ch</text>
+<text class="han" x="128.8" y="372">짜</text>
+</g>
+<g id="c7" data-cp="U+1786" data-series="a">
+<rect class="cellA" x="209.6" y="260" width="161.6" height="124" rx="10"/>
+<circle class="mkA" cx="229.6" cy="280" r="13"/><text class="mkT" x="229.6" y="286">a</text>
+<text class="km" lang="km" x="290.4" y="328">ឆ</text>
+<text class="rom" x="286.4" y="372">chh</text>
+<text class="han" x="298.4" y="372">차</text>
+</g>
+<g id="c8" data-cp="U+1787" data-series="o">
+<rect class="cellO" x="379.2" y="260" width="161.6" height="124" rx="10"/>
+<rect class="mkO" x="386.2" y="267" width="26" height="26" rx="3"/><text class="mkT" x="399.2" y="286">o</text>
+<text class="km" lang="km" x="460.0" y="328">ជ</text>
+<text class="rom" x="456.0" y="372">ch</text>
+<text class="han" x="468.0" y="372">쪼</text>
+</g>
+<g id="c9" data-cp="U+1788" data-series="o">
+<rect class="cellO" x="548.8" y="260" width="161.6" height="124" rx="10"/>
+<rect class="mkO" x="555.8" y="267" width="26" height="26" rx="3"/><text class="mkT" x="568.8" y="286">o</text>
+<text class="km" lang="km" x="629.6" y="328">ឈ</text>
+<text class="rom" x="625.6" y="372">chh</text>
+<text class="han" x="637.6" y="372">초</text>
+</g>
+<g id="c10" data-cp="U+1789" data-series="o">
+<rect class="cellO" x="718.4" y="260" width="161.6" height="124" rx="10"/>
+<rect class="mkO" x="725.4" y="267" width="26" height="26" rx="3"/><text class="mkT" x="738.4" y="286">o</text>
+<text class="km" lang="km" x="799.2" y="328">ញ</text>
+<text class="rom" x="795.2" y="372">nh</text>
+<text class="han" x="807.2" y="372">뇨</text>
+</g>
+<g id="c11" data-cp="U+178A" data-series="a">
+<rect class="cellA" x="40.0" y="392" width="161.6" height="124" rx="10"/>
+<circle class="mkA" cx="60.0" cy="412" r="13"/><text class="mkT" x="60.0" y="418">a</text>
+<text class="km" lang="km" x="120.8" y="460">ដ</text>
+<text class="rom" x="116.8" y="504">d</text>
+<text class="han" x="128.8" y="504">다</text>
+</g>
+<g id="c12" data-cp="U+178B" data-series="a">
+<rect class="cellA" x="209.6" y="392" width="161.6" height="124" rx="10"/>
+<circle class="mkA" cx="229.6" cy="412" r="13"/><text class="mkT" x="229.6" y="418">a</text>
+<text class="km" lang="km" x="290.4" y="460">ឋ</text>
+<text class="rom" x="286.4" y="504">th</text>
+<text class="han" x="298.4" y="504">타</text>
+</g>
+<g id="c13" data-cp="U+178C" data-series="o">
+<rect class="cellO" x="379.2" y="392" width="161.6" height="124" rx="10"/>
+<rect class="mkO" x="386.2" y="399" width="26" height="26" rx="3"/><text class="mkT" x="399.2" y="418">o</text>
+<text class="km" lang="km" x="460.0" y="460">ឌ</text>
+<text class="rom" x="456.0" y="504">d</text>
+<text class="han" x="468.0" y="504">도</text>
+</g>
+<g id="c14" data-cp="U+178D" data-series="o">
+<rect class="cellO" x="548.8" y="392" width="161.6" height="124" rx="10"/>
+<rect class="mkO" x="555.8" y="399" width="26" height="26" rx="3"/><text class="mkT" x="568.8" y="418">o</text>
+<text class="km" lang="km" x="629.6" y="460">ឍ</text>
+<text class="rom" x="625.6" y="504">th</text>
+<text class="han" x="637.6" y="504">토</text>
+</g>
+<g id="c15" data-cp="U+178E" data-series="a">
+<rect class="cellA" x="718.4" y="392" width="161.6" height="124" rx="10"/>
+<circle class="mkA" cx="738.4" cy="412" r="13"/><text class="mkT" x="738.4" y="418">a</text>
+<text class="km" lang="km" x="799.2" y="460">ណ</text>
+<text class="rom" x="795.2" y="504">n</text>
+<text class="han" x="807.2" y="504">나</text>
+</g>
+<g id="c16" data-cp="U+178F" data-series="a">
+<rect class="cellA" x="40.0" y="524" width="161.6" height="124" rx="10"/>
+<circle class="mkA" cx="60.0" cy="544" r="13"/><text class="mkT" x="60.0" y="550">a</text>
+<text class="km" lang="km" x="120.8" y="592">ត</text>
+<text class="rom" x="116.8" y="636">t</text>
+<text class="han" x="128.8" y="636">따</text>
+</g>
+<g id="c17" data-cp="U+1790" data-series="a">
+<rect class="cellA" x="209.6" y="524" width="161.6" height="124" rx="10"/>
+<circle class="mkA" cx="229.6" cy="544" r="13"/><text class="mkT" x="229.6" y="550">a</text>
+<text class="km" lang="km" x="290.4" y="592">ថ</text>
+<text class="rom" x="286.4" y="636">th</text>
+<text class="han" x="298.4" y="636">타</text>
+</g>
+<g id="c18" data-cp="U+1791" data-series="o">
+<rect class="cellO" x="379.2" y="524" width="161.6" height="124" rx="10"/>
+<rect class="mkO" x="386.2" y="531" width="26" height="26" rx="3"/><text class="mkT" x="399.2" y="550">o</text>
+<text class="km" lang="km" x="460.0" y="592">ទ</text>
+<text class="rom" x="456.0" y="636">t</text>
+<text class="han" x="468.0" y="636">또</text>
+</g>
+<g id="c19" data-cp="U+1792" data-series="o">
+<rect class="cellO" x="548.8" y="524" width="161.6" height="124" rx="10"/>
+<rect class="mkO" x="555.8" y="531" width="26" height="26" rx="3"/><text class="mkT" x="568.8" y="550">o</text>
+<text class="km" lang="km" x="629.6" y="592">ធ</text>
+<text class="rom" x="625.6" y="636">th</text>
+<text class="han" x="637.6" y="636">토</text>
+</g>
+<g id="c20" data-cp="U+1793" data-series="o">
+<rect class="cellO" x="718.4" y="524" width="161.6" height="124" rx="10"/>
+<rect class="mkO" x="725.4" y="531" width="26" height="26" rx="3"/><text class="mkT" x="738.4" y="550">o</text>
+<text class="km" lang="km" x="799.2" y="592">ន</text>
+<text class="rom" x="795.2" y="636">n</text>
+<text class="han" x="807.2" y="636">노</text>
+</g>
+<g id="c21" data-cp="U+1794" data-series="a">
+<rect class="cellA" x="40.0" y="656" width="161.6" height="124" rx="10"/>
+<circle class="mkA" cx="60.0" cy="676" r="13"/><text class="mkT" x="60.0" y="682">a</text>
+<text class="km" lang="km" x="120.8" y="724">ប</text>
+<text class="rom" x="116.8" y="768">b, p</text>
+<text class="han" x="128.8" y="768">바</text>
+</g>
+<g id="c22" data-cp="U+1795" data-series="a">
+<rect class="cellA" x="209.6" y="656" width="161.6" height="124" rx="10"/>
+<circle class="mkA" cx="229.6" cy="676" r="13"/><text class="mkT" x="229.6" y="682">a</text>
+<text class="km" lang="km" x="290.4" y="724">ផ</text>
+<text class="rom" x="286.4" y="768">ph</text>
+<text class="han" x="298.4" y="768">파</text>
+</g>
+<g id="c23" data-cp="U+1796" data-series="o">
+<rect class="cellO" x="379.2" y="656" width="161.6" height="124" rx="10"/>
+<rect class="mkO" x="386.2" y="663" width="26" height="26" rx="3"/><text class="mkT" x="399.2" y="682">o</text>
+<text class="km" lang="km" x="460.0" y="724">ព</text>
+<text class="rom" x="456.0" y="768">p</text>
+<text class="han" x="468.0" y="768">뽀</text>
+</g>
+<g id="c24" data-cp="U+1797" data-series="o">
+<rect class="cellO" x="548.8" y="656" width="161.6" height="124" rx="10"/>
+<rect class="mkO" x="555.8" y="663" width="26" height="26" rx="3"/><text class="mkT" x="568.8" y="682">o</text>
+<text class="km" lang="km" x="629.6" y="724">ភ</text>
+<text class="rom" x="625.6" y="768">ph</text>
+<text class="han" x="637.6" y="768">포</text>
+</g>
+<g id="c25" data-cp="U+1798" data-series="o">
+<rect class="cellO" x="718.4" y="656" width="161.6" height="124" rx="10"/>
+<rect class="mkO" x="725.4" y="663" width="26" height="26" rx="3"/><text class="mkT" x="738.4" y="682">o</text>
+<text class="km" lang="km" x="799.2" y="724">ម</text>
+<text class="rom" x="795.2" y="768">m</text>
+<text class="han" x="807.2" y="768">모</text>
+</g>
+<g id="c26" data-cp="U+1799" data-series="o">
+<rect class="cellO" x="40.0" y="788" width="161.6" height="124" rx="10"/>
+<rect class="mkO" x="47.0" y="795" width="26" height="26" rx="3"/><text class="mkT" x="60.0" y="814">o</text>
+<text class="km" lang="km" x="120.8" y="856">យ</text>
+<text class="rom" x="116.8" y="900">y</text>
+<text class="han" x="128.8" y="900">요</text>
+</g>
+<g id="c27" data-cp="U+179A" data-series="o">
+<rect class="cellO" x="209.6" y="788" width="161.6" height="124" rx="10"/>
+<rect class="mkO" x="216.6" y="795" width="26" height="26" rx="3"/><text class="mkT" x="229.6" y="814">o</text>
+<text class="km" lang="km" x="290.4" y="856">រ</text>
+<text class="rom" x="286.4" y="900">r</text>
+<text class="han" x="298.4" y="900">로</text>
+</g>
+<g id="c28" data-cp="U+179B" data-series="o">
+<rect class="cellO" x="379.2" y="788" width="161.6" height="124" rx="10"/>
+<rect class="mkO" x="386.2" y="795" width="26" height="26" rx="3"/><text class="mkT" x="399.2" y="814">o</text>
+<text class="km" lang="km" x="460.0" y="856">ល</text>
+<text class="rom" x="456.0" y="900">l</text>
+<text class="han" x="468.0" y="900">로</text>
+</g>
+<g id="c29" data-cp="U+179C" data-series="o">
+<rect class="cellO" x="548.8" y="788" width="161.6" height="124" rx="10"/>
+<rect class="mkO" x="555.8" y="795" width="26" height="26" rx="3"/><text class="mkT" x="568.8" y="814">o</text>
+<text class="km" lang="km" x="629.6" y="856">វ</text>
+<text class="rom" x="625.6" y="900">v</text>
+<text class="han" x="637.6" y="900">워</text>
+</g>
+<g id="c30" data-cp="U+179F" data-series="a">
+<rect class="cellA" x="40.0" y="920" width="161.6" height="124" rx="10"/>
+<circle class="mkA" cx="60.0" cy="940" r="13"/><text class="mkT" x="60.0" y="946">a</text>
+<text class="km" lang="km" x="120.8" y="988">ស</text>
+<text class="rom" x="116.8" y="1032">s</text>
+<text class="han" x="128.8" y="1032">사</text>
+</g>
+<g id="c31" data-cp="U+17A0" data-series="a">
+<rect class="cellA" x="209.6" y="920" width="161.6" height="124" rx="10"/>
+<circle class="mkA" cx="229.6" cy="940" r="13"/><text class="mkT" x="229.6" y="946">a</text>
+<text class="km" lang="km" x="290.4" y="988">ហ</text>
+<text class="rom" x="286.4" y="1032">h</text>
+<text class="han" x="298.4" y="1032">하</text>
+</g>
+<g id="c32" data-cp="U+17A1" data-series="a">
+<rect class="cellA" x="379.2" y="920" width="161.6" height="124" rx="10"/>
+<circle class="mkA" cx="399.2" cy="940" r="13"/><text class="mkT" x="399.2" y="946">a</text>
+<text class="km" lang="km" x="460.0" y="988">ឡ</text>
+<text class="rom" x="456.0" y="1032">l</text>
+<text class="han" x="468.0" y="1032">라</text>
+</g>
+<g id="c33" data-cp="U+17A2" data-series="a">
+<rect class="cellA" x="548.8" y="920" width="161.6" height="124" rx="10"/>
+<circle class="mkA" cx="568.8" cy="940" r="13"/><text class="mkT" x="568.8" y="946">a</text>
+<text class="km" lang="km" x="629.6" y="988">អ</text>
+<text class="rom" x="625.6" y="1032">'</text>
+<text class="han" x="637.6" y="1032">아</text>
+</g>
+<g id="legend-a">
+<rect class="cellA" x="718.4" y="788" width="161.6" height="124" rx="10"/>
+<circle class="mkA" cx="738.4" cy="808" r="13"/><text class="mkT" x="738.4" y="814">a</text>
+<text class="leg" x="762.4" y="816">a 계열</text>
+<text class="leg2" x="732.4" y="850">주황 · 실선</text>
+<text class="leg2" x="732.4" y="876">● 표식</text>
+<text class="leg2" x="732.4" y="902">기본 모음 “아”</text>
+</g>
+<g id="legend-o">
+<rect class="cellO" x="718.4" y="920" width="161.6" height="124" rx="10"/>
+<rect class="mkO" x="725.4" y="927" width="26" height="26" rx="3"/><text class="mkT" x="738.4" y="946">o</text>
+<text class="leg" x="762.4" y="948">o 계열</text>
+<text class="leg2" x="732.4" y="982">청록 · 점선</text>
+<text class="leg2" x="732.4" y="1008">■ 표식</text>
+<text class="leg2" x="732.4" y="1034">기본 모음 “오”</text>
+</g>
+<text class="note" x="40" y="1088">로마자는 위키백과 「Khmer script」 표의 UNGEGN(유엔 지명 표준) 열을</text>
+<text class="note" x="40" y="1121">간단히 줄인 것이고, 한글 소리는 제작팀이 가장 비슷하게 어림한</text>
+<text class="note" x="40" y="1154">값(추정)이에요. 크메르어에는 한글에 없는 소리(목청을 닫는 소리, 숨을</text>
+<text class="note" x="40" y="1187">들이쉬듯 내는 ‘ㄷ’·‘ㅂ’ 소리 등)가 있어서 정확히 옮길 수 없어요. 계열이</text>
+<text class="note" x="40" y="1220">달라도 첫소리가 같은 글자가 많아요(예: <tspan lang="km" class="kmf">ក</tspan>과 <tspan lang="km" class="kmf">គ</tspan>는 둘 다 ‘ㄲ’에 가까운</text>
+<text class="note" x="40" y="1253">[k]). 두 계열의 진짜 차이는 뒤에 붙는 모음을 읽는 소리예요(a 계열 <tspan lang="km" class="kmf">ា</tspan>는</text>
+<text class="note" x="40" y="1286">“아”, o 계열 <tspan lang="km" class="kmf">ា</tspan>는 “이어”).</text>
+</svg>

@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="word-anatomy" viewBox="0 0 920 1378" width="920" height="1378" role="img" aria-labelledby="t d">
+<title id="t">크메르 낱말 풀어 보기: ខ្មែរ와 កម្ពុជា</title>
+<desc id="d">크메르(khmae)와 캄보디아(Kampuchea)라는 두 낱말을 큰 글자로 보여 주고, 아래에 구성 글자를 쓰는 순서대로 한 칸씩 떼어 놓은 도식. 크메르는 자음 ខ, 아래에 붙는 자음 ម, 왼쪽에 붙는 모음 ែ, 자음 រ로 이루어진다. 캄보디아는 자음 ក과 ម, 아래에 붙는 자음 ព, 아래에 붙는 모음 ុ, 자음 ជ, 오른쪽에 붙는 모음 ា로 이루어진다.</desc>
+<style>
+  #word-anatomy .bg { fill: #FBF6EC; }
+  #word-anatomy .title { fill: #2A211B; font: 700 36px "Noto Sans KR", "Malgun Gothic", sans-serif; }
+  #word-anatomy .sub { fill: #5A4D43; font: 500 23px "Noto Sans KR", "Malgun Gothic", sans-serif; }
+  #word-anatomy .big { fill: #2A211B; font: 400 112px "Leelawadee UI", "Khmer UI", sans-serif; text-anchor: middle; }
+  #word-anatomy .roman { fill: #2A211B; font: 700 34px "Noto Sans KR", "Malgun Gothic", sans-serif; text-anchor: middle; }
+  #word-anatomy .roman2 { fill: #5A4D43; font: 500 30px "Noto Sans KR", "Malgun Gothic", sans-serif; }
+  #word-anatomy .step { fill: #5A4D43; font: 500 24px "Noto Sans KR", "Malgun Gothic", sans-serif; text-anchor: middle; }
+  #word-anatomy .lab { fill: #2A211B; font: 700 21px "Noto Sans KR", "Malgun Gothic", sans-serif; text-anchor: middle; }
+  #word-anatomy .glyph { fill: #2A211B; font: 400 74px "Leelawadee UI", "Khmer UI", sans-serif; text-anchor: middle; }
+  #word-anatomy .cp { fill: #5A4D43; font: 500 18px "Noto Sans KR", "Malgun Gothic", sans-serif; text-anchor: middle; }
+  #word-anatomy .num { fill: #fff; font: 700 18px "Noto Sans KR", "Malgun Gothic", sans-serif; text-anchor: middle; }
+  #word-anatomy .note { fill: #2A211B; font: 500 23px "Noto Sans KR", "Malgun Gothic", sans-serif; }
+  #word-anatomy .foot { fill: #5A4D43; font: 500 21px "Noto Sans KR", "Malgun Gothic", sans-serif; }
+  #word-anatomy .tC { fill: #F4ECDD; stroke: #7A5B3C; stroke-width: 3; }
+  #word-anatomy .tS { fill: #E1ECEE; stroke: #3E6A73; stroke-width: 3; stroke-dasharray: 9 5; }
+  #word-anatomy .tV { fill: #FBE9D5; stroke: #B45309; stroke-width: 4; }
+  #word-anatomy .mC { fill: #7A5B3C; } #word-anatomy .mS { fill: #3E6A73; } #word-anatomy .mV { fill: #B45309; }
+  #word-anatomy .arr { fill: none; stroke: #B45309; stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; }
+  #word-anatomy .arrS { stroke: #3E6A73; }
+  #word-anatomy .rule { stroke: #7A5B3C; stroke-width: 2; stroke-dasharray: 3 8; stroke-linecap: round; }
+</style>
+<rect class="bg" width="920" height="1378"/>
+<text class="title" x="40" y="54">낱말을 한 글자씩 풀어 보면</text>
+<circle class="mC" cx="52" cy="89" r="12"/><text class="sub" x="72" y="96">자음</text>
+<path class="mS" d="M 142 77 L 166 77 L 154 99 Z"/><text class="sub" x="176" y="96">아래에 붙는 자음</text>
+<rect class="mV" x="352" y="77" width="24" height="24" rx="3"/><text class="sub" x="386" y="96">모음</text>
+<text class="sub" x="470" y="96">숫자 = 쓰는(입력) 순서</text>
+<g id="word1">
+<text class="big" lang="km" x="460" y="250">ខ្មែរ</text>
+<text class="roman" x="460" y="318">khmae · 크마에<tspan class="roman2" dx="12">크메르(사람·말)</tspan></text>
+<path class="arr" d="M 80 346 V 372 M 70 362 L 80 372 L 90 362"/>
+<text class="step" x="108" y="366" style="text-anchor:start">글자를 쓰는 순서대로 떼어 보면</text>
+<g id="w1t1" data-cp="U+1781" data-kind="C">
+<rect class="tC" x="168.0" y="386" width="140" height="238" rx="12"/>
+<circle class="mC" cx="192.0" cy="412" r="15"/>
+<text class="num" x="192.0" y="418.5">1</text>
+<text class="lab" x="238.0" y="454">자음</text>
+<text class="lab" x="238.0" y="479">(위쪽 글자)</text>
+<text class="glyph" lang="km" x="238.0" y="562">ខ</text>
+<text class="cp" x="238.0" y="614">U+1781</text>
+</g>
+<g id="w1t2" data-cp="U+17D2 U+1798" data-kind="S">
+<rect class="tS" x="316.0" y="386" width="140" height="238" rx="12"/>
+<path class="mS" d="M 323.0 398 L 357.0 398 L 340.0 429 Z"/>
+<text class="num" x="340.0" y="414">2</text>
+<path class="arr arrS" d="M 430.0 398 V 426 M 420.0 416 L 430.0 426 L 440.0 416"/>
+<text class="lab" x="386.0" y="454">아래에 붙는</text>
+<text class="lab" x="386.0" y="479">자음</text>
+<text class="glyph" lang="km" x="386.0" y="540">្ម</text>
+<text class="cp" x="386.0" y="614">U+17D2+1798</text>
+</g>
+<g id="w1t3" data-cp="U+17C2" data-kind="VL">
+<rect class="tV" x="464.0" y="386" width="140" height="238" rx="12"/>
+<rect class="mV" x="473.0" y="397" width="30" height="30" rx="3"/>
+<text class="num" x="488.0" y="418.5">3</text>
+<path class="arr" d="M 592.0 412 H 564.0 M 574.0 402 L 564.0 412 L 574.0 422"/>
+<text class="lab" x="534.0" y="454">왼쪽에 붙는</text>
+<text class="lab" x="534.0" y="479">모음</text>
+<text class="glyph" lang="km" x="534.0" y="562">ែ</text>
+<text class="cp" x="534.0" y="614">U+17C2</text>
+</g>
+<g id="w1t4" data-cp="U+179A" data-kind="C">
+<rect class="tC" x="612.0" y="386" width="140" height="238" rx="12"/>
+<circle class="mC" cx="636.0" cy="412" r="15"/>
+<text class="num" x="636.0" y="418.5">4</text>
+<text class="lab" x="682.0" y="454">자음</text>
+<text class="lab" x="682.0" y="479">(오른쪽 끝)</text>
+<text class="glyph" lang="km" x="682.0" y="562">រ</text>
+<text class="cp" x="682.0" y="614">U+179A</text>
+</g>
+<text class="note" x="40" y="660">ែ는 쓰는 순서로는 셋째지만, 화면에서는 글자 묶음의 맨 왼쪽에 그려져요.</text>
+<text class="note" x="40" y="692">ម은 ខ 아래에 작게 붙고, 맨 오른쪽에 រ가 와요.</text>
+</g>
+<line class="rule" x1="40" y1="724" x2="880" y2="724"/>
+<g id="word2">
+<text class="big" lang="km" x="460" y="854">កម្ពុជា</text>
+<text class="roman" x="460" y="922">Kampuchea · 깜뿌찌어<tspan class="roman2" dx="12">캄보디아</tspan></text>
+<path class="arr" d="M 80 950 V 976 M 70 966 L 80 976 L 90 966"/>
+<text class="step" x="108" y="970" style="text-anchor:start">글자를 쓰는 순서대로 떼어 보면</text>
+<g id="w2t1" data-cp="U+1780" data-kind="C">
+<rect class="tC" x="20.0" y="990" width="140" height="238" rx="12"/>
+<circle class="mC" cx="44.0" cy="1016" r="15"/>
+<text class="num" x="44.0" y="1022.5">1</text>
+<text class="lab" x="90.0" y="1058">자음</text>
+<text class="lab" x="90.0" y="1083">(기본 글자)</text>
+<text class="glyph" lang="km" x="90.0" y="1166">ក</text>
+<text class="cp" x="90.0" y="1218">U+1780</text>
+</g>
+<g id="w2t2" data-cp="U+1798" data-kind="C">
+<rect class="tC" x="168.0" y="990" width="140" height="238" rx="12"/>
+<circle class="mC" cx="192.0" cy="1016" r="15"/>
+<text class="num" x="192.0" y="1022.5">2</text>
+<text class="lab" x="238.0" y="1058">자음</text>
+<text class="lab" x="238.0" y="1083">(위쪽 글자)</text>
+<text class="glyph" lang="km" x="238.0" y="1166">ម</text>
+<text class="cp" x="238.0" y="1218">U+1798</text>
+</g>
+<g id="w2t3" data-cp="U+17D2 U+1796" data-kind="S">
+<rect class="tS" x="316.0" y="990" width="140" height="238" rx="12"/>
+<path class="mS" d="M 323.0 1002 L 357.0 1002 L 340.0 1033 Z"/>
+<text class="num" x="340.0" y="1018">3</text>
+<path class="arr arrS" d="M 430.0 1002 V 1030 M 420.0 1020 L 430.0 1030 L 440.0 1020"/>
+<text class="lab" x="386.0" y="1058">아래에 붙는</text>
+<text class="lab" x="386.0" y="1083">자음</text>
+<text class="glyph" lang="km" x="386.0" y="1144">្ព</text>
+<text class="cp" x="386.0" y="1218">U+17D2+1796</text>
+</g>
+<g id="w2t4" data-cp="U+17BB" data-kind="VB">
+<rect class="tV" x="464.0" y="990" width="140" height="238" rx="12"/>
+<rect class="mV" x="473.0" y="1001" width="30" height="30" rx="3"/>
+<text class="num" x="488.0" y="1022.5">4</text>
+<path class="arr" d="M 578.0 1002 V 1030.0 M 568.0 1020 L 578.0 1030 L 588.0 1020"/>
+<text class="lab" x="534.0" y="1058">아래에 붙는</text>
+<text class="lab" x="534.0" y="1083">모음</text>
+<text class="glyph" lang="km" x="534.0" y="1144">ុ</text>
+<text class="cp" x="534.0" y="1218">U+17BB</text>
+</g>
+<g id="w2t5" data-cp="U+1787" data-kind="C">
+<rect class="tC" x="612.0" y="990" width="140" height="238" rx="12"/>
+<circle class="mC" cx="636.0" cy="1016" r="15"/>
+<text class="num" x="636.0" y="1022.5">5</text>
+<text class="lab" x="682.0" y="1058">자음</text>
+<text class="glyph" lang="km" x="682.0" y="1166">ជ</text>
+<text class="cp" x="682.0" y="1218">U+1787</text>
+</g>
+<g id="w2t6" data-cp="U+17B6" data-kind="VR">
+<rect class="tV" x="760.0" y="990" width="140" height="238" rx="12"/>
+<rect class="mV" x="769.0" y="1001" width="30" height="30" rx="3"/>
+<text class="num" x="784.0" y="1022.5">6</text>
+<path class="arr" d="M 860.0 1016 H 888.0 M 878.0 1006 L 888.0 1016 L 878.0 1026"/>
+<text class="lab" x="830.0" y="1058">오른쪽에</text>
+<text class="lab" x="830.0" y="1083">붙는 모음</text>
+<text class="glyph" lang="km" x="830.0" y="1166">ា</text>
+<text class="cp" x="830.0" y="1218">U+17B6</text>
+</g>
+<text class="note" x="40" y="1264">ព은 ម 아래에, ុ는 그 ព 아래에 붙고, ា는 ជ의 오른쪽에 붙어요.</text>
+</g>
+<text class="foot" x="40" y="1312">점선 원은 글자를 따로 떼어 보일 때 글꼴이 자동으로 그려 주는 표시예요.</text>
+<text class="foot" x="40" y="1342">로마자·한글은 회화책식 대표 표기이고, 한글 발음은 제작팀이 어림한 값(추정)이에요.</text>
+</svg>

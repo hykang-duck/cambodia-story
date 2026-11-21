@@ -1,0 +1,654 @@
+/* ==========================================================
+   캄보디아 이해 시리즈 - 문서 PDF 스타일 (doc.css)
+   A5 세로 / 1단 / 본문 11pt+ / 외부 리소스 없음
+   마크업 계약은 README.md 참고. 회차마다 고치지 않는다.
+   ========================================================== */
+
+@page {
+  size: 148mm 210mm;
+  margin: 12mm 9mm 12mm 9mm;   /* 아래 여백 12mm: 쪽 번호는 이 여백 안(하단 중앙) */
+  @bottom-center {
+    content: counter(page);
+    font: 8pt "Noto Sans KR", "Malgun Gothic", sans-serif;
+    color: #5A4D43;
+  }
+}
+
+:root {
+  /* 색 */
+  --paper: #FFFFFF;
+  --ink: #2A211B;
+  --ink-soft: #5A4D43;
+  --line: #D9CCB8;
+  --saffron: #B45309;        /* 승복의 사프란 (강조) */
+  --saffron-tint: #FBEBD6;
+  --sand: #7A5B3C;           /* 앙코르 사암 */
+  --sand-tint: #F4ECDD;
+  --green: #2F6B4A;          /* 논과 야자 */
+  --green-tint: #E3EFE7;
+  --water: #3E6A73;          /* 톤레삽 */
+  --water-tint: #E1ECEE;
+  --accent: var(--saffron);
+  --accent-tint: var(--saffron-tint);
+  --accent-deep: #7C3A06;
+  --warn: #8F2D2D;
+  --warn-tint: #F9E6E3;
+
+  /* 글꼴 */
+  --font-ko: "Noto Sans KR", "Malgun Gothic", sans-serif;
+  --font-km: "Leelawadee UI", "Khmer UI", "Noto Sans Khmer", "Noto Sans KR", sans-serif;
+
+  /* 글자 크기 (pt) */
+  --fs-body: 11pt;
+  --fs-small: 9.5pt;
+  --fs-table: 10.5pt;
+  --lh-body: 1.8;
+}
+
+/* 차분한 변형: 학살 등 무거운 회차. <article class="doc tone-solemn"> */
+.tone-solemn {
+  --accent: #46505A;
+  --accent-tint: #E9ECEF;
+  --accent-deep: #2B3238;
+  --saffron: #46505A;
+  --saffron-tint: #E9ECEF;
+  --sand: #5E5A55;
+  --sand-tint: #EEECE9;
+  --line: #CFCBC5;
+}
+
+* { box-sizing: border-box; }
+
+html {
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-ko);
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+  word-break: keep-all;
+  overflow-wrap: break-word;
+  orphans: 3;
+  widows: 3;
+}
+
+/* 크메르 문자: 한글보다 위아래로 길어서 줄 높이를 따로 준다 */
+.km, :lang(km) {
+  font-family: var(--font-km);
+  line-height: 2.1;
+  word-break: normal;
+}
+
+/* 문장 속 인라인 크메르 문자: 줄 간격을 늘리지 않는다 */
+span.km, span[lang="km"] { line-height: 1; font-size: 1.15em; }
+
+/* ---------- 제목 ---------- */
+h1.doc-title, h1 {
+  font-size: 21pt;
+  line-height: 1.35;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  margin: 0 0 4mm;
+  color: var(--ink);
+  break-after: avoid;
+}
+h1 .day-no {
+  display: block;
+  font-size: 10.5pt;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--accent);
+  margin-bottom: 1mm;
+}
+
+h2 {
+  font-size: 15pt;
+  line-height: 1.4;
+  font-weight: 800;
+  margin: 8mm 0 3mm;
+  padding-bottom: 1.5mm;
+  border-bottom: 1.5pt solid var(--accent);
+  break-after: avoid;
+}
+h3 {
+  font-size: 12.5pt;
+  line-height: 1.45;
+  font-weight: 700;
+  margin: 6mm 0 2mm;
+  color: var(--sand);
+  break-after: avoid;
+}
+h4 {
+  font-size: 10pt;
+  margin: 0 0 1mm;
+  font-weight: 700;
+  break-after: avoid;
+}
+
+p { margin: 0 0 3.2mm; }
+strong { font-weight: 700; }
+a { color: var(--water); text-decoration: underline; text-underline-offset: 1.5pt; }
+
+/* ---------- 메타 인용줄 (blockquote.meta) ---------- */
+blockquote.meta {
+  margin: 0 0 3mm;
+  padding: 2.5mm 3.5mm;
+  background: var(--sand-tint);
+  border-left: 3pt solid var(--accent);
+  border-radius: 0 2mm 2mm 0;
+  font-size: 10.5pt;
+  line-height: 1.7;
+  color: var(--ink);
+}
+blockquote.meta p { margin: 0; }
+blockquote.meta .q { font-weight: 700; display: block; margin-bottom: 1mm; }
+blockquote.meta .sep { color: var(--ink-soft); margin: 0 1.5mm; }
+blockquote.meta .read-time { color: var(--ink-soft); }
+
+/* ---------- 대분류 태그 (색 + 모양 + 글자, 항상 글자 표시) ---------- */
+.tag {
+  --tag-color: #5A4D43;
+  --shape: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  display: inline-flex;
+  align-items: center;
+  gap: 1.3mm;
+  padding: 0.3mm 2.6mm 0.3mm 2mm;
+  border-radius: 10mm;
+  background: var(--tag-color);
+  color: #fff;
+  font-size: 9.5pt;
+  font-weight: 700;
+  line-height: 1.6;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+.tag::before {
+  content: "";
+  width: 0.72em;
+  height: 0.72em;
+  background: #fff;
+  clip-path: var(--shape);
+  flex: none;
+}
+.t-land     { --tag-color: #2F6B4A; --shape: circle(50%); }
+.t-history  { --tag-color: #6B5640; --shape: polygon(0 0,100% 0,100% 100%,0 100%); }
+.t-people   { --tag-color: #8A5A00; --shape: polygon(50% 0,100% 100%,0 100%); }
+.t-society  { --tag-color: #5E4B7A; --shape: polygon(50% 0,100% 50%,50% 100%,0 50%); }
+.t-language { --tag-color: #1F6A78; --shape: polygon(50% 0,100% 38%,82% 100%,18% 100%,0 38%); }
+.t-religion { --tag-color: #A94A00; --shape: polygon(25% 0,75% 0,100% 50%,75% 100%,25% 100%,0 50%); }
+.t-culture  { --tag-color: #8A3A63; --shape: polygon(50% 0,62% 38%,100% 50%,62% 62%,50% 100%,38% 62%,0 50%,38% 38%); }
+.t-food     { --tag-color: #A8431E; --shape: polygon(0 0,100% 0,50% 100%); }
+.t-proverb  { --tag-color: #4F6B2A; --shape: polygon(25% 0,100% 0,75% 100%,0 100%); }
+.t-etiquette{ --tag-color: #8F2D2D; --shape: polygon(35% 0,65% 0,65% 35%,100% 35%,100% 65%,65% 65%,65% 100%,35% 100%,35% 65%,0 65%,0 35%,35% 35%); }
+.t-economy  { --tag-color: #3B5E8C; --shape: polygon(30% 0,70% 0,100% 30%,100% 70%,70% 100%,30% 100%,0 70%,0 30%); }
+.t-law      { --tag-color: #36454F; --shape: polygon(0 0,60% 0,100% 50%,60% 100%,0 100%,40% 50%); }
+.t-current  { --tag-color: #B3261E; --shape: polygon(0 20%,100% 20%,100% 80%,0 80%); }
+
+/* ---------- 어제 퀴즈 정답 한 줄 ---------- */
+p.prev-answer {
+  margin: 0 0 4mm;
+  padding: 2mm 3.5mm;
+  background: var(--accent-tint);
+  border-radius: 2mm;
+  font-size: 10.5pt;
+  line-height: 1.65;
+}
+p.prev-answer strong {
+  color: var(--accent);
+  margin-right: 1.5mm;
+}
+
+/* ---------- 확신도 배지 (인라인) ---------- */
+.badge {
+  display: inline-block;
+  padding: 0 1.6mm;
+  margin: 0 0.5mm;
+  border-radius: 1.2mm;
+  border: 0.9pt solid currentColor;
+  font-size: 8.5pt;
+  font-weight: 700;
+  line-height: 1.55;
+  vertical-align: 0.1em;
+  white-space: nowrap;
+  word-break: keep-all;
+}
+.badge.b-sure    { color: #1F6A3E; background: #E3F1E8; }   /* [확실] */
+.badge.b-guess   { color: #7A5200; background: #FBF0D2; }   /* [추정] */
+.badge.b-dispute { color: #8F2D2D; background: #F9E6E3; }   /* [논쟁 있음] */
+/* 배지 바로 뒤 문장부호는 배지와 한 덩어리(줄바꿈으로 갈라지지 않고 붙어 보임) */
+.nb { white-space: nowrap; }
+.nb .badge { margin-right: 0; }
+.badge.b-sure::before    { content: "● "; }
+.badge.b-guess::before   { content: "▲ "; }
+.badge.b-dispute::before { content: "◆ "; }
+
+/* ---------- 본문 섹션 ---------- */
+section.sec { margin: 0; }
+
+/* ---------- 이미지와 캡션 ---------- */
+figure.fig {
+  margin: 4mm 0 5mm;
+  break-inside: avoid;
+}
+/* 그림은 자르지 않고 비율대로 줄인다. 높이 상한 64mm: 가로로 긴 국기·사진은 폭이 줄고 가운데에 놓인다.
+   (큰 그림이 다음 쪽으로 밀려 앞 쪽 아래가 비는 일을 줄이는 값. 더 크게 보여야 하면 .fig.tall) */
+figure.fig img {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 64mm;
+  margin: 0 auto;
+  object-fit: contain;
+  border-radius: 1.5mm;
+  background: var(--sand-tint);
+}
+figure.fig.tall img { max-height: 85mm; }
+figure.fig.contain img { object-fit: contain; }
+figure.fig figcaption {
+  margin-top: 1.6mm;
+  font-size: var(--fs-small);
+  line-height: 1.6;
+  color: var(--ink-soft);
+}
+figcaption .credit {
+  display: block;
+  font-size: 8.5pt;
+  line-height: 1.5;
+  color: var(--ink-soft);
+}
+figcaption .credit .license { font-weight: 700; }
+
+/* ---------- 표 ---------- */
+table.data {
+  width: 100%;
+  margin: 3mm 0 5mm;
+  border-collapse: collapse;
+  font-size: var(--fs-table);
+  line-height: 1.55;
+  break-inside: auto;        /* 표는 행 사이에서만 끊긴다(행은 아래 tr 규칙으로 보호) */
+}
+table.data thead { display: table-header-group; }
+table.data caption {
+  caption-side: top;
+  break-after: avoid;
+  text-align: left;
+  font-weight: 700;
+  font-size: 10.5pt;
+  padding: 0 0 1.5mm;
+  color: var(--ink);
+}
+table.data th, table.data td {
+  padding: 1.8mm 2.2mm;
+  border-bottom: 0.7pt solid var(--line);
+  text-align: left;
+  vertical-align: top;
+}
+table.data thead th {
+  background: var(--accent);
+  color: #fff;
+  font-weight: 700;
+  border-bottom: none;
+}
+table.data tbody th { font-weight: 700; background: var(--sand-tint); }
+table.data tbody tr:nth-child(even) td { background: #FAF6EE; }
+table.data tr { break-inside: avoid; }
+table.data td.num, table.data th.num { text-align: right; font-variant-numeric: tabular-nums; }
+
+/* ---------- 연표 ---------- */
+ol.timeline {
+  list-style: none;
+  margin: 3mm 0 5mm;
+  padding: 0 0 0 4mm;
+  border-left: 1.5pt solid var(--accent);
+}
+ol.timeline li {
+  position: relative;
+  margin: 0 0 3mm;
+  padding: 0 0 0 3mm;
+  break-inside: avoid;
+}
+ol.timeline li::before {
+  content: "";
+  position: absolute;
+  left: -6.4mm;
+  top: 2.4mm;
+  width: 3mm;
+  height: 3mm;
+  border-radius: 50%;
+  background: #fff;
+  border: 1.5pt solid var(--accent);
+}
+ol.timeline time {
+  display: block;
+  font-weight: 800;
+  font-size: 10.5pt;
+  color: var(--accent);
+  line-height: 1.6;
+}
+ol.timeline .ev { font-size: 10.5pt; line-height: 1.65; }
+
+/* ---------- 지도 (인라인 SVG) ---------- */
+figure.map {
+  margin: 4mm 0 5mm;
+  break-inside: avoid;
+}
+figure.map svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 80mm;          /* 130mm 폭에서 지도(920x760)는 107mm까지 커져 쪽 아래가 비므로 80mm로 제한. 지도 글자는 인쇄 약 9.5~10pt */
+  background: var(--water-tint);
+  border-radius: 1.5mm;
+}
+figure.map figcaption {
+  margin-top: 1.6mm;
+  font-size: var(--fs-small);
+  line-height: 1.6;
+  color: var(--ink-soft);
+}
+/* SVG 공통 클래스 (README의 지도 규칙) */
+svg .svg-water  { fill: #E1ECEE; }
+svg .svg-land   { fill: #F4ECDD; stroke: #7A5B3C; stroke-width: 2; }
+svg .svg-land2  { fill: #E3EFE7; stroke: #2F6B4A; stroke-width: 2; }
+svg .svg-river  { fill: none; stroke: #3E6A73; stroke-width: 4; stroke-linecap: round; }
+svg .svg-road   { fill: none; stroke: #7A5B3C; stroke-width: 2.5; stroke-dasharray: 8 5; }
+svg .svg-border { fill: none; stroke: #5A4D43; stroke-width: 2; stroke-dasharray: 2 5; stroke-linecap: round; }
+svg .svg-pin    { fill: #B45309; stroke: #fff; stroke-width: 2; }
+svg .svg-label  { fill: #2A211B; font: 700 19px "Noto Sans KR","Malgun Gothic",sans-serif; paint-order: stroke; stroke: #fff; stroke-width: 4px; stroke-linejoin: round; }
+svg .svg-label-sm { font-size: 17px; font-weight: 500; }
+svg .svg-km     { font-family: "Leelawadee UI","Khmer UI",sans-serif; font-size: 19px; }
+
+/* ---------- 참고 링크 목록 (작고 차분하게) ---------- */
+aside.refs {
+  margin: 4mm 0 2mm;
+  padding: 2mm 0 0;
+  border-top: 0.7pt dashed var(--line);
+  font-size: 9pt;
+  line-height: 1.55;
+  color: var(--ink-soft);
+  break-inside: avoid;
+}
+aside.refs h4 {
+  font-size: 9pt;
+  letter-spacing: 0.04em;
+  color: var(--ink-soft);
+}
+aside.refs ul {
+  margin: 0;
+  padding: 0 0 0 4.5mm;
+}
+aside.refs li { margin: 0 0 0.8mm; word-break: break-all; }
+aside.refs a { color: var(--ink-soft); text-decoration: underline; }
+aside.refs .lang {
+  display: inline-block;
+  padding: 0 1.2mm;
+  margin: 0 1mm;
+  border: 0.6pt solid var(--ink-soft);
+  border-radius: 1mm;
+  font-size: 7.5pt;
+  font-weight: 700;
+  line-height: 1.4;
+}
+aside.refs .date { white-space: nowrap; }
+
+/* ---------- 상자 공통 ---------- */
+.box {
+  margin: 5mm 0;
+  padding: 3.5mm 4mm;
+  border-radius: 2mm;
+  border: 1pt solid var(--line);
+  background: var(--sand-tint);
+  break-inside: avoid;
+}
+.box > h2, .box > h3 {
+  margin: 0 0 2mm;
+  padding: 0;
+  border: none;
+  font-size: 12.5pt;
+  color: var(--ink);
+}
+.box > :last-child { margin-bottom: 0; }
+.box p { margin: 0 0 2.4mm; }
+.box ul, .box ol { margin: 0 0 2.4mm; padding-left: 5mm; }
+
+/* 프놈펜에서 만나면 */
+.box.meet {
+  background: var(--green-tint);
+  border-color: #9CC3AA;
+  border-left: 3pt solid var(--green);
+}
+.box.meet > h2, .box.meet > h3 { color: var(--green); }
+
+/* 오늘의 크메르어 한마디 */
+.box.khmer {
+  background: var(--accent-tint);
+  border-color: var(--accent);
+  text-align: center;
+}
+.box.khmer > h2, .box.khmer > h3 { color: var(--accent); }
+.box.khmer .km-big {
+  font-family: var(--font-km);
+  font-size: 30pt;
+  line-height: 2.1;
+  font-weight: 400;
+  margin: 1mm 0 0;
+  color: var(--ink);
+  word-break: normal;
+}
+.box.khmer .roman {
+  font-size: 12pt;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  margin: 0;
+}
+.box.khmer .hangul {
+  font-size: 12pt;
+  margin: 0 0 1.5mm;
+  color: var(--ink-soft);
+}
+.box.khmer .mean { font-size: 10.5pt; margin: 0; text-align: left; }
+.box.khmer .note { font-size: 9.5pt; color: var(--ink-soft); text-align: left; margin-top: 1.5mm; }
+
+/* 퀴즈 */
+.box.quiz {
+  background: #fff;
+  border: 1.5pt solid var(--accent);
+}
+.box.quiz > h2, .box.quiz > h3 { color: var(--accent); }
+.box.quiz ol.q-list { padding-left: 6mm; }
+.box.quiz ol.q-list > li { margin-bottom: 2.4mm; }
+.box.quiz .q-type {
+  display: inline-block;
+  margin-right: 1.5mm;
+  padding: 0 1.5mm;
+  background: var(--accent-tint);
+  color: var(--accent);
+  border-radius: 1mm;
+  font-size: 8.5pt;
+  font-weight: 700;
+}
+/* 퀴즈 상자 안 "정답은 문서 맨 끝에 있어요" 한 줄 (정답 풀이는 build.py가 문서 끝 「퀴즈 정답」 구역으로 옮긴다) */
+.answer-pointer { margin: 2mm 0 0; font-size: 10.5pt; font-weight: 700; color: var(--accent); }
+.box.quiz ul.choices { list-style: none; padding-left: 0; margin: 1mm 0 0; }
+.box.quiz ul.choices li { margin: 0 0 0.6mm; }
+
+/* 정답 접기. PDF에는 open 속성을 붙여 펼친 채 인쇄한다 */
+details.answer {
+  margin: 3mm 0 0;
+  border: 1pt dashed var(--accent);
+  border-radius: 1.5mm;
+  background: var(--accent-tint);
+  break-inside: avoid;
+}
+details.answer > summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 1.6mm 3mm;
+  font-weight: 800;
+  color: var(--accent);
+}
+details.answer > summary::-webkit-details-marker { display: none; }
+details.answer > summary::before {
+  content: "정답";
+  display: inline-block;
+  margin-right: 2mm;
+  padding: 0 2mm;
+  border-radius: 1mm;
+  background: var(--accent);
+  color: #fff;
+  font-size: 9.5pt;
+}
+details.answer[open] > summary { border-bottom: 0.7pt dashed var(--accent); }
+details.answer > .answer-body { padding: 2mm 3mm 0.5mm; font-size: 10.5pt; line-height: 1.7; }
+details.answer > .answer-body p { margin: 0 0 1.6mm; }
+@media print {
+  details.answer::details-content { content-visibility: visible; display: block; }
+}
+
+/* 더 알아보기 */
+.box.more {
+  background: var(--water-tint);
+  border-color: #A9C3C8;
+  border-left: 3pt solid var(--water);
+}
+.box.more > h2, .box.more > h3 { color: var(--water); }
+.box.more li { margin-bottom: 1.2mm; }
+
+/* 주의 상자: 리더 검토 필요 등 */
+.box.notice {
+  background: var(--warn-tint);
+  border-color: #E2B4AE;
+  border-left: 3pt solid var(--warn);
+  font-size: 10.5pt;
+}
+.box.notice > .notice-title {
+  display: block;
+  margin-bottom: 1mm;
+  font-weight: 800;
+  color: var(--warn);
+}
+.box.notice > .notice-title::before { content: "▲ "; }
+
+/* 확신도 범례 */
+.legend {
+  margin: 6mm 0 0;
+  padding: 2.5mm 3.5mm;
+  border: 0.7pt solid var(--line);
+  border-radius: 2mm;
+  font-size: 9.5pt;
+  line-height: 1.9;
+  break-inside: avoid;
+}
+.legend h4 { font-size: 9.5pt; margin-bottom: 0.5mm; }
+.legend ul { list-style: none; margin: 0; padding: 0; }
+.legend li { margin: 0; }
+
+hr { border: none; border-top: 0.7pt solid var(--line); margin: 6mm 0; }
+ul, ol { margin: 0 0 3.2mm; padding-left: 5.5mm; }
+li { margin-bottom: 1mm; }
+
+/* 시리즈 푸터(문서 맨 끝, 선택) */
+footer.doc-foot {
+  margin-top: 6mm;
+  font-size: 8.5pt;
+  color: var(--ink-soft);
+  text-align: center;
+}
+
+/* ==========================================================
+   추가 (Day 1 요청): 오늘의 3줄, 확신도 안내, 시리즈 안내, 표 facts
+   ========================================================== */
+
+/* 오늘의 3줄: 첫 쪽에서 가장 먼저 눈에 들어오게 진한 바탕 + 흰 글자 */
+.box.summary3 {
+  margin: 0 0 3mm;
+  padding: 3mm 4mm 2.5mm;
+  background: var(--accent-deep);
+  border: none;
+  border-radius: 2mm;
+  color: #fff;
+}
+.box.summary3 > h2, .box.summary3 > h3, .box.summary3 > .summary-title {
+  display: block;
+  margin: 0 0 2mm;
+  padding: 0;
+  border: none;
+  font-size: 12pt;
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: 0.02em;
+}
+.box.summary3 ol {
+  list-style: none;
+  counter-reset: s3;
+  margin: 0;
+  padding: 0;
+}
+.box.summary3 ol li {
+  counter-increment: s3;
+  position: relative;
+  margin: 0 0 1.6mm;
+  padding-left: 8mm;
+  font-size: 11pt;
+  line-height: 1.6;
+}
+.box.summary3 ol li:last-child { margin-bottom: 0; }
+.box.summary3 ol li::before {
+  content: counter(s3);
+  position: absolute;
+  left: 0;
+  top: 0.5mm;
+  width: 5.6mm;
+  height: 5.6mm;
+  border-radius: 50%;
+  background: #fff;
+  color: var(--accent-deep);
+  font-weight: 900;
+  font-size: 9.5pt;
+  line-height: 5.6mm;
+  text-align: center;
+}
+/* 진한 바탕 위 배지는 흰 바탕 칩으로 */
+.box.summary3 .badge { background: #fff; }
+
+/* 확신도 안내 한 줄 */
+p.note-confidence {
+  margin: 0 0 4mm;
+  padding: 0 1mm;
+  font-size: 9.5pt;
+  line-height: 1.6;
+  color: var(--ink-soft);
+}
+p.note-confidence .badge { font-size: 8pt; }
+
+/* 첫 쪽에서 소개 블록 바로 뒤 첫 섹션 제목은 위 간격을 줄인다(본문이 첫 쪽에 더 들어가도록) */
+p.prev-answer + section.sec > h2:first-child { margin-top: 3mm; }
+
+/* 시리즈 안내(Day 1): 어제 퀴즈 정답 한 줄과 같은 스타일을 재사용한다 */
+p.prev-answer.series-intro { font-size: 10.5pt; }
+
+/* 4열 사실표: 항목 | 내용 | 확신도 | 출처 (12행 안팎, A5 폭) */
+table.data.facts {
+  table-layout: fixed;
+  font-size: 9.5pt;
+  line-height: 1.5;
+  break-inside: auto;
+}
+table.data.facts thead { display: table-header-group; }
+table.data.facts th, table.data.facts td { padding: 1.4mm 1.6mm; }
+table.data.facts col.c-item { width: 17%; }
+table.data.facts col.c-body { width: 41%; }
+table.data.facts col.c-conf { width: 17%; }
+table.data.facts col.c-src  { width: 25%; }
+table.data.facts td.conf { text-align: center; }
+table.data.facts td.conf .badge { margin: 0; font-size: 7.5pt; padding: 0 1mm; }
+table.data.facts td.src { font-size: 8.5pt; line-height: 1.4; color: var(--ink-soft); overflow-wrap: anywhere; word-break: normal; }
+
+/* 크메르어 상자: 로마자/한글 발음을 목록으로 쓴 경우도 깨지지 않게 (권장 마크업은 README) */
+.box.khmer ul { list-style: none; padding: 0; margin: 0 0 2mm; text-align: left; font-size: 10.5pt; }
